@@ -1,6 +1,6 @@
 import React from 'react'
 import 'boxicons'
-import Logo from '../../Assert/logo.png';
+import Logo from 'https://github.com/MritunjayKumar07/portfolio/blob/master/src/Assert/logo.png';
 import './HeaderStyle.css';
 import { Link } from 'react-router-dom';
 
