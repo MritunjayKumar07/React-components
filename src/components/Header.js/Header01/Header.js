@@ -26,7 +26,7 @@ const StyledHeader = styled.header`
     font-weight: 600;
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 35px;
     cursor: pointer;
   }
 

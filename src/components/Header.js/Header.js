@@ -13,7 +13,7 @@ export default function Header() {
                 <Header02 />
             </div>
             <div style={{marginBottom:'25px', marginTop:'25px'}}>
-                <Header/>
+                <Header03/>
             </div>
         </>
     )
