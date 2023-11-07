@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+import Header from './components/Header.js/Header';
 // import Header from './components/Header/Header01/Header';
 // import Profile from './PortfolioContainer/Home/Profile';
 // import Contact from './PortfolioContainer/ContactMe/Contact';
@@ -10,15 +11,18 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <h1>Hello</h1>
-      {/* <Header /> */}
-      {/* <Routes>
+      <div className='App'>
+        <Header />
+        {/* <Header /> */}
+        {/* <Routes>
         <Route path="/" exact element={<Profile />} />
         <Route path="contact" exact element={<Contact />} />
         <Route path="about" exact element={<AboutUs />} />
         <Route path="service" exact element={<Service />} />
         <Route path="blog" exact element={<Blog />} />
       </Routes> */}
+      </div>
+
     </>
   );
 }
