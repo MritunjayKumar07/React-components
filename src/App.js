@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import style from './AppCss/Header.module.css'
 import { Link } from 'react-router-dom';
 import { FaUserAlt, FaBars, FaWindowClose } from 'react-icons/fa';
-import {TbComponents} from 'react-icons/tb';
+import { TbComponents } from 'react-icons/tb';
 
 
 function App() {
@@ -40,8 +40,8 @@ function App() {
           </ul>
         </header>
         <main>
-        <div className={style.sideMenuBtn}><TbComponents onClick={()=>setCloseSideComponents(!closeSideComponents)} className={style.sideBarComponentsIcon}/></div>
-          {closeSideComponents?<section className={style.sideBar}>
+          <div className={style.sideMenuBtn}><TbComponents onClick={() => setCloseSideComponents(!closeSideComponents)} className={style.sideBarComponentsIcon} /></div>
+          {closeSideComponents ? <section className={style.sideBar}>
             <h3>Components</h3>
             <input type='text' placeholder='Search components...' />
             <ul>
@@ -52,16 +52,10 @@ function App() {
               <li><Link to="#" className={style.btn}>Footer</Link></li>
               <li><Link to="#" className={style.btn}>Cards</Link></li>
               <li><Link to="#" className={style.btn}>Banner</Link></li>
-              <li><Link to="#" className={style.btn}>Custome Components</Link></li>
+              <li><Link to="#" className={style.btn}>Custome_Components</Link></li>
             </ul>
-          </section>:""}
+          </section> : ""}
           <section className={style.main}>
-            <section>
-              <h1>This is main</h1>
-            </section>
-            <footer>
-              <h1>Footer</h1>
-            </footer>
           </section>
         </main>
       </div>

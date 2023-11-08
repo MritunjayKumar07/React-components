@@ -236,8 +236,3 @@ main .main{
   place-items: center;
   width: 100%;
 }
-
-main .main footer{
-  background: #000;
-  color:#fff,
-}
