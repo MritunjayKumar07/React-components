@@ -17,10 +17,12 @@ export default function Header03() {
           <li><Link className={style.li} to="#">Features</Link></li>
           <li><Link className={style.li} to="#">Price</Link></li>
           <li><Link className={style.li} to="#">AboutUs</Link></li>
+          {isMenu ? <li className={style.inputDesktop}><input type='text' placeholder='Search box...' /></li> :''}
         </ul>) : ''
         }
         <ul className={style.RightSideMenu}>
-          <li><Link className={`${style.li}`} to="#">ContactUs</Link></li>
+          {isMenu ? (<li className={style.inputMobile}><input type='text' placeholder='Search box...' /></li>) : ""}
+          <li className={`${style.btn}`}><Link className={`${style.li}`} to="#">ContactUs</Link></li>
           <div className={style.icons}><FaUserAlt className={`${style.li} ${style.icon}`} /></div>
           <div className={`${style.icons} ${style.mobile}`}>
             {isMenu ? (
