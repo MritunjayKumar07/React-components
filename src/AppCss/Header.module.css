@@ -163,21 +163,81 @@
 main {
   display: flex;
   justify-content: space-between;
+  float: left;
   flex-direction: row;
   height: 100%;
 }
 
+main .sideMenuBtn{
+  position: fixed;
+  display: flex;
+  text-align: left;
+  margin: 8px;
+  background: #181823;
+  padding: 0.4rem;
+  border-radius: 8px;
+}
+
+main .sideMenuBtn .sideBarComponentsIcon{
+  color: #FF577F;
+  font-size: 2rem;
+}
+main .sideMenuBtn .sideBarComponentsIcon:hover{
+  color: #FF8B13;
+}
+
 main .sideBar {
-  width: 280px;
+  /* padding-top: 1rem; */
+  width: 400px;
   background: #181823;
 }
+
 
 main .sideBar h3{
   color: #EEEEE8;
   flex-direction: column;
 }
 
+main .sideBar input{
+  width: 60%;
+  padding: 0.6rem 1rem;
+  border: 2px solid #FF577F;
+  color: #EEEEE8;
+  background: #181823;
+  border-radius: 5px;
+}
+
 main .sideBar ul li{
+  width: 100%;
+  margin: 10px 9px;
+  margin-left: -12px;
+  text-align: left;
   list-style: none;
   color: #EEEEE8;
+}
+
+main .sideBar ul li .btn{
+  color: #EEEEE8;
+  text-decoration: none;
+  padding: 0.3rem;
+  width: 100%;
+  transition: all 0.7s;
+}
+
+main .sideBar ul li .btn:hover{
+  background: #FF577F;
+  border-radius: 5px;
+}
+
+main .main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+
+main .main footer{
+  background: #000;
+  color:#fff,
 }
